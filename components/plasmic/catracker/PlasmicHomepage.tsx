@@ -273,6 +273,27 @@ function PlasmicHomepage__RenderFunc(props: {
                   <Stack__
                     as={"div"}
                     hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__jiP8D)}
+                  >
+                    <CheckCircleSvgrepoComsvgIcon
+                      className={classNames(projectcss.all, sty.svg__effA0)}
+                      role={"img"}
+                    />
+
+                    <h6
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h6,
+                        projectcss.__wab_text,
+                        sty.h6__hTr4
+                      )}
+                    >
+                      {"easy setup via telegram"}
+                    </h6>
+                  </Stack__>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__zvIjx)}
                   >
                     <CheckCircleSvgrepoComsvgIcon
@@ -288,7 +309,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.h6__rE6Js
                       )}
                     >
-                      {"notification on telegram"}
+                      {"realtime notification"}
                     </h6>
                   </Stack__>
                   <Stack__
