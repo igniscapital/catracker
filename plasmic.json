@@ -1,0 +1,118 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
+      "projectApiToken": "DIkcfhBwjMCJSjcxfBkMuy4NImyytq5EWylxVcpS9t9EpdhnPQuBgBGxmk00AB1itMFa1KXTxOKnrjN2PN9nlA",
+      "projectName": "react-awesome-reveal",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/react_awesome_reveal/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "R6s1FdhksG",
+          "name": "Reveal",
+          "displayName": "hostless-reveal",
+          "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "vX2oViM6ZZg9g1K1WvUyLd",
+      "projectApiToken": "98yLHO2Hti13R5qXZAWXsol3yeCJPP5iU4DNcJNkcR8kVOmec7XuyYxWldtvNvxWdQc7SyqEBpJ2ZaFWHqOUA",
+      "projectName": "catracker",
+      "version": "latest",
+      "cssFilePath": "plasmic/catracker/plasmic.module.css",
+      "components": [
+        {
+          "id": "CYXS79XAj0Sy",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "vX2oViM6ZZg9g1K1WvUyLd",
+          "renderModuleFilePath": "plasmic/catracker/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/catracker/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/"
+        }
+      ],
+      "icons": [
+        {
+          "id": "VsyDTjgUdlLm",
+          "name": "CheckCircleSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/catracker/icons/PlasmicIcon__CheckCircleSvgrepoComsvg.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "Y5Mj8wv8KlSO",
+          "name": "catracker.png",
+          "filePath": "../public/plasmic/catracker/images/catrackerpng.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "2L6xo05rIIma",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "88051ZSz6FZP",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "nFhv9beNKSW-",
+        "name": "Screen",
+        "projectId": "vX2oViM6ZZg9g1K1WvUyLd",
+        "contextFilePath": "plasmic/catracker/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.330",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.330/dist/plasmic.schema.json"
+}
