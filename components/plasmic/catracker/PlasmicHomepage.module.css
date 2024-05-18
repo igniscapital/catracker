@@ -74,8 +74,6 @@
   display: flex;
   position: relative;
   flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
   width: 100%;
   height: 100%;
   max-width: 100%;
@@ -84,10 +82,38 @@
   min-height: 0;
   padding: 8px;
 }
+.freeBox__pOuXo > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-height: 0;
+}
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__pOuXo {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__pOuXo > :global(.__wab_flex-container) {
+    flex-direction: column;
+    margin-left: calc(0px - 0px);
+    width: calc(100% + 0px);
+    margin-top: calc(0px - 32px);
+    height: calc(100% + 32px);
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__pOuXo > :global(.__wab_flex-container) > *,
+  .freeBox__pOuXo > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .freeBox__pOuXo > :global(.__wab_flex-container) > picture > img,
+  .freeBox__pOuXo
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > picture
+    > img {
+    margin-left: 0px;
+    margin-top: 32px;
   }
 }
 .reveal__g98Ha:global(.__wab_instance) {
@@ -214,7 +240,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .h5 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .freeBox__boXi {
@@ -259,6 +285,13 @@
   width: auto;
   height: auto;
   max-width: 100%;
+  font-weight: 400;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .h6__skTg8 {
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
 .freeBox__jiP8D {
   display: flex;
@@ -302,6 +335,13 @@
   width: auto;
   height: auto;
   max-width: 100%;
+  font-weight: 400;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .h6__hTr4 {
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
 .freeBox__zvIjx {
   display: flex;
@@ -345,6 +385,13 @@
   width: auto;
   height: auto;
   max-width: 100%;
+  font-weight: 400;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .h6__rE6Js {
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
 .freeBox__xc1Lf {
   display: flex;
@@ -388,6 +435,13 @@
   width: auto;
   height: auto;
   max-width: 100%;
+  font-weight: 400;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .h6___4Ek9J {
+    font-weight: 400;
+    font-size: 14px;
+  }
 }
 .freeBox__jpiEg {
   display: flex;
@@ -431,6 +485,13 @@
   width: auto;
   height: auto;
   max-width: 100%;
+  font-weight: 400;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .h6___6Zmsj {
+    font-weight: 400;
+    font-size: 14px;
+  }
 }
 .link {
   display: flex;

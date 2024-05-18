@@ -168,7 +168,11 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-override={overrides.section}
             className={classNames(projectcss.all, sty.section)}
           >
-            <div className={classNames(projectcss.all, sty.freeBox__pOuXo)}>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__pOuXo)}
+            >
               <Reveal
                 className={classNames("__wab_instance", sty.reveal__g98Ha)}
                 direction={"left"}
@@ -398,7 +402,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   }}
                 />
               </PlasmicLink__>
-            </div>
+            </Stack__>
           </section>
         </div>
       </div>
