@@ -86,8 +86,8 @@ export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   pageMetadataOverride?: Flex__<typeof PlasmicHead>;
   section?: Flex__<"section">;
-  img?: Flex__<typeof PlasmicImg__>;
   h5?: Flex__<"h5">;
+  link?: Flex__<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultHomepageProps {}
@@ -176,10 +176,8 @@ function PlasmicHomepage__RenderFunc(props: {
               >
                 <div className={classNames(projectcss.all, sty.freeBox__aKpG4)}>
                   <PlasmicImg__
-                    data-plasmic-name={"img"}
-                    data-plasmic-override={overrides.img}
                     alt={""}
-                    className={classNames(sty.img)}
+                    className={classNames(sty.img___3Sgz6)}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -196,6 +194,24 @@ function PlasmicHomepage__RenderFunc(props: {
                       fullWidth: 1080,
                       fullHeight: 1080,
                       aspectRatio: undefined
+                    }}
+                  />
+
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__dx0St)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"350px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/catracker/images/svganimetsvg.svg",
+                      fullWidth: 300,
+                      fullHeight: 118,
+                      aspectRatio: 2.55
                     }}
                   />
                 </div>
@@ -356,6 +372,32 @@ function PlasmicHomepage__RenderFunc(props: {
                   </Stack__>
                 </Stack__>
               </Reveal>
+              <PlasmicLink__
+                data-plasmic-name={"link"}
+                data-plasmic-override={overrides.link}
+                className={classNames(projectcss.all, projectcss.a, sty.link)}
+                component={Link}
+                href={"https://x.com/catrackeronsol"}
+                platform={"nextjs"}
+              >
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__xmPd)}
+                  displayHeight={"32px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"32px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/catracker/images/xIconsvgpng.png",
+                    fullWidth: 2048,
+                    fullHeight: 2048,
+                    aspectRatio: undefined
+                  }}
+                />
+              </PlasmicLink__>
             </div>
           </section>
         </div>
@@ -365,11 +407,11 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "pageMetadataOverride", "section", "img", "h5"],
+  root: ["root", "pageMetadataOverride", "section", "h5", "link"],
   pageMetadataOverride: ["pageMetadataOverride"],
-  section: ["section", "img", "h5"],
-  img: ["img"],
-  h5: ["h5"]
+  section: ["section", "h5", "link"],
+  h5: ["h5"],
+  link: ["link"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -378,8 +420,8 @@ type NodeDefaultElementType = {
   root: "div";
   pageMetadataOverride: typeof PlasmicHead;
   section: "section";
-  img: typeof PlasmicImg__;
   h5: "h5";
+  link: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -444,8 +486,8 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
     section: makeNodeComponent("section"),
-    img: makeNodeComponent("img"),
     h5: makeNodeComponent("h5"),
+    link: makeNodeComponent("link"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

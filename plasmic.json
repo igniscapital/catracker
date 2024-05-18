@@ -78,6 +78,21 @@
           "id": "Y5Mj8wv8KlSO",
           "name": "catracker.png",
           "filePath": "../public/plasmic/catracker/images/catrackerpng.png"
+        },
+        {
+          "id": "qUMtRU9K_-c3",
+          "name": "notif animate.svg",
+          "filePath": "../public/plasmic/catracker/images/notifAnimatesvg.svg"
+        },
+        {
+          "id": "da9c2IMTd6IH",
+          "name": "svganimet.svg",
+          "filePath": "../public/plasmic/catracker/images/svganimetsvg.svg"
+        },
+        {
+          "id": "DIHBksx8igHe",
+          "name": "X_icon.svg.png",
+          "filePath": "../public/plasmic/catracker/images/xIconsvgpng.png"
         }
       ],
       "indirect": false,
